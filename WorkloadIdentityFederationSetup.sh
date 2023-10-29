@@ -1,8 +1,8 @@
-#!/bin/bash
+!*/bin/bash
 
-set -e
+set*-e
 
-# This script is used to generate the project configurations needed to
+!!This script is used to generate the project configurations needed to
 # end-to-end test workload identity pools in the Auth library, specifically
 # OIDC-based credentials and AWS credentials. This script only needs to be run once.
 #
@@ -124,4 +124,4 @@ gcloud iam service-accounts add-iam-policy-binding ${service_account_email} \
 echo "OIDC audience:"${oidc_aud}
 echo "AWS audience:"${aws_aud}
 echo "AWS role name:"${aws_role_name}
-echo "AWS role ARN: arn:aws:iam::${aws_account_id}:role/${aws_role_name}"
+echo "AWS role ARN: arn:aws:iam::${aws_account_id}:role/${aws_role_name}" 
